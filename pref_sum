@@ -1,0 +1,13 @@
+int n;cin>>n;
+int ar[n];
+for(int i = 0;i<n;i++)cin>>ar[i];
+ll pref_sum[n+1];
+pref_sum[0] = 0;
+    //pref_sum[i] = pref_sum[i-1]+ar[i];
+   for(ll i = 0;i<n;i++)
+   {
+      pref_sum[i+1] = pref_sum[i]+ar[i];
+   }
+   for(ll i=0;i<=n;i++)cout<<pref_sum[i]<<endl;
+
+    cout << pref_sum[4] - pref_sum[1] <<  endl ; 
