@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long 
+#define  a(v)  v.begin(), v.end()
+const int N=1e6+10;
+
+
+int main ()
+ {  
+ 
+  
+ 
+
+     // pair 
+     // define pair<typr , type > varibale name access 1 st elemnt pair.first or pair.second
+     pair<ll,ll> pa ;
+     pa.first = 1 ;
+      pa.second = 2 ;
+       cout << pa.first << " " << pa.second <<  endl;
+     pair<ll,pair<ll,ll> > p3 = {1, {2, 3}};
+   cout << p3.first << " " << p3.second.first << " " << p3.second.second << "\n";
+   pair <ll,ll> foo;
+ pair <ll,ll> bar;
+
+  foo = make_pair (10,20);
+  bar = make_pair (10.5,'A'); 
+
+  std::cout << "foo: " << foo.first << ", " << foo.second << '\n';
+  std::cout << "bar: " << bar.first << ", " << bar.second << '\n';
+  int a, b;
+pair<int, int> p = {1, 2};
+tie(a, b) = p;
+cout << a << " " << b << "\n"; //1 2
+tuple<int, int, int> t = {1, 2, 3};
+int x, y;
+tie(x, ignore, y) = t; //'ignore' ignores that element
+cout << x << " " << y << "\n"; //1 3
+
+
+
+ }
