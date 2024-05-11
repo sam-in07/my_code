@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define eb  emplace_back
+#define se2 " "
+#define ll long long 
+#define she(a,b,i)        for (ll i = a; i <=b; i++)
+#define s(v)               v.begin(), v.end()//v(n)
+#define println(x,y) ;    cout << x << se2 << y << endl ;
+struct sam {
+    ll a, b , area , index; 
+   
+    sam(ll a, ll b, ll index) : a(a), b(b), index(index) {
+        area = a * b;
+    }
+
+    //comparator
+    bool operator<(const sam& other) const {
+        if (area != other.area) {
+            return area > other.area; 
+        }
+        return index < other.index; 
+    }
+};
+
+int main() {
+    ll i , a , b, n;
+    cin >> n;
+
+    vector<sam> triangles;
+    she(1,n,i)
+   {
+        
+        cin >> a >> b;
+        triangles.eb(a, b, i);
+    }
+
+    
+    sort(s(triangles));
+
+    for (const auto& triangle : triangles) {
+     println(triangle.a,triangle.b) ; 
+       
+    }
+
+    return 0;
+}
