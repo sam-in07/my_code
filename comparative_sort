@@ -1,3 +1,22 @@
+/*
+u have 2 number a and b . u need to print it sortred order which area is  big it will print first . Then if 2 tringle area are same u need to  print which varible u input first 
+
+
+input 
+3
+2 10 
+5 4
+6 7
+output 
+6 7
+2 10 
+5 4        
+
+
+*/
+
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define eb  emplace_back
