@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long 
+
+
+int main() {
+   {
+ ll i, j , x, n , m ,sum = 0 , a , b, c, val_stor , val_stor1 , val_stro2 , val_stor3 , count_kor = 0 , k, val_max = 0 , z;
+cin >> n ;
+for (int k = 31; k >= 0; k--) {
+
+if (n&(1<<k)) count_kor++ ; 
+
+
+}
+cout << count_kor << endl;
+   }
+    return 0;
+}
